@@ -12,6 +12,7 @@
 // component scss imports ===============================================
 @import './components/navbar.scss';
 @import './components/footer.scss';
+@import './components/header.scss';
 
 
 // remove defaults ======================================================
@@ -19,20 +20,18 @@
   margin: 0;
   padding: 0;
 }
-
-html { 
-  overflow-x: hidden;
+html {
   background-color: $cream; 
+  padding: 0 24px;
+}
+
+html, #__next, body, .centered-cont { 
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body { 
-  max-width: 1400px;
-  width: 100%;
-}
-
 // text styleguide ======================================================
 h1, h2, h3, h4, h5, h6, nav a { 
   font-family: 'Lora', serif; 
@@ -44,7 +43,7 @@ p, a, label, button, input[type="button"] {
   color: $darkbrown;
 }
 
-h1 { font-size: 96px; }
+h1 { font-size: 60px; }
 h2 { font-size: 48px; }
 h3 { font-size: 40px; }
 h4 { font-size: 36px; }
@@ -53,3 +52,24 @@ h6 { font-size: 20px; }
 
 p, a, label, button, input[type="button"] 
 { font-size: 16px; }
+
+// media queries ========================================================
+
+@media screen and (max-width: $lg) {
+  h1 { font-size: 48px; }
+  h2 { font-size: 48px; }
+  h3 { font-size: 40px; }
+  h4 { font-size: 36px; }
+  h5 { font-size: 24px; }
+  h6 { font-size: 20px; }
+
+}
+@media screen and (max-width: $md) {
+  
+h1 { font-size: 36px; }
+h2 { font-size: 48px; }
+h3 { font-size: 40px; }
+h4 { font-size: 36px; }
+h5 { font-size: 24px; }
+h6 { font-size: 20px; }
+}

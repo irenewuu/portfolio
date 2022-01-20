@@ -8,14 +8,14 @@ import Navbar from '../comps/navbar/Navbar';
 import Footer from '../comps/footer/Footer';
 
 function MyApp({ Component, pageProps }) {
-  return (<>
+  return (<div className='centered-cont'>
     <Head>
       <title>Irene Wu</title>
     </Head>
     <Navbar />
     <Component {...pageProps} />
     <Footer />
-  </>)
+  </div>)
 }
 
 export default MyApp

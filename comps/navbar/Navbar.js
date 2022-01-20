@@ -7,6 +7,9 @@ import closeIcon from '../../assets/close-icon.svg';
 
 const MenuPanelCont = styled.div`
   display: block;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0 -24px;
   opacity: ${props=>props.opacity};
   z-index: ${props=>props.zIndex};
   background-color: rgba(0,0,0,.25);
@@ -32,7 +35,7 @@ export default function Navbar() {
       setzIndex(!zIndex);
   }
 
-  return <div>
+  return <div className='navbar-cont'>
     {/* mobile menu panel */}
   <MenuPanelCont 
     className='menu-panel-cont'
