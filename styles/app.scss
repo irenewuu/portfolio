@@ -27,12 +27,19 @@ html {
 }
 
 html, #__next, body, .centered-cont { 
-  box-sizing: border-box;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+html, #__next, body, .centered-cont, .full-width-cont {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.border {
+  padding: 0 24px;
+}
+
 // text styleguide ======================================================
 h1, h2, h3, h4, h5, h6, nav a { 
   font-family: 'Lora', serif; 
@@ -58,9 +65,9 @@ p, a, label, button, input[type="button"]
 
 @media screen and (max-width: $lg) {
   h1 { font-size: 48px; }
-  h2 { font-size: 48px; }
-  h3 { font-size: 40px; }
-  h4 { font-size: 36px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 36px; }
+  h4 { font-size: 30px; }
   h5 { font-size: 24px; }
   h6 { font-size: 20px; }
 
@@ -68,9 +75,10 @@ p, a, label, button, input[type="button"]
 @media screen and (max-width: $md) {
   
 h1 { font-size: 36px; }
-h2 { font-size: 48px; }
-h3 { font-size: 40px; }
-h4 { font-size: 36px; }
-h5 { font-size: 24px; }
-h6 { font-size: 20px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 18px; }
+
 }

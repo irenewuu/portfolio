@@ -8,7 +8,7 @@ export default function ImgHeader({
     img="",
 }) {
   return <div className='header-cont'>
-      <div className='info-cont'>
+      <div className='img-info-cont'>
           <div>
             <h1>{header}</h1>
             <p>{description}</p>

@@ -5,6 +5,9 @@ export default function Home() {
   return <div className="centered-cont">
     <Header />
     <img className="down-arrow" src={downarrow.src} />
-    <h2>work in progress</h2>
+    <div className="full-width-cont border">
+      <h3>My Recent Works</h3>
+
+    </div>
   </div>
 }
