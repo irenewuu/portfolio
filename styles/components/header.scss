@@ -3,6 +3,9 @@
     width: 100%;
     margin: 0 24px;
     position: relative;
+    top: 0;
+    height: 100vh;
+    overflow:hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,15 +27,18 @@
     }
     .info-cont div { width: 60%; }
 
-    img { width: 100%; }
+    img { width: 120vw; }
 }
     .mobile-deco { display: none; }
     .tablet-deco { display: none; }
     .desktop-deco { display: block; }
 
+@media screen and (min-width: $lgst) {
+    .header-cont img { width: 100%;}
+}
+
 @media screen and (max-width: $lg) {
     .header-cont .info-cont div { width: 80%; }
-    
 }
 
 @media screen and (max-width: $md) {
