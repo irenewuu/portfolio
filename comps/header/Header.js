@@ -1,7 +1,6 @@
 import React from 'react';
 import desktopDeco from './../../assets/header-deco.svg'
-import tabletDeco from './../../assets/tablet-header-deco.svg'
-import mobileDeco from './../../assets/mobile-header-deco.svg'
+import tabletDeco from './../../assets/mobile-header-deco.svg'
 
 export default function Header({
     header= "Hello, my name is Irene Wu. I am a front-end developer and designer.",
@@ -14,8 +13,7 @@ export default function Header({
             <p>{description}</p>
           </div>
       </div>
-      <img src={desktopDeco.src} className='desktop-deco' />
-      <img src={tabletDeco.src} className='tablet-deco' />
-      <img src={mobileDeco.src} className='mobile-deco' />
+      <img src={desktopDeco.src} className='bg-deco desktop-deco' />
+      <img src={tabletDeco.src} className='bg-deco tablet-deco' />
   </div>
 }

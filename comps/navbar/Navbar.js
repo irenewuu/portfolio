@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {useRouter} from 'next/router';
 import styled from 'styled-components';
 
 import menuIcon from '../../assets/menu-icon.svg';
@@ -9,7 +10,7 @@ const MenuPanelCont = styled.div`
   display: block;
   box-sizing: border-box;
   overflow-x: hidden;
-  margin: 0 -24px;
+  width: 100%;
   opacity: ${props=>props.opacity};
   z-index: ${props=>props.zIndex};
   background-color: rgba(0,0,0,.25);
@@ -24,6 +25,7 @@ const MenuPanel = styled.div`
 `;
 
 export default function Navbar() {
+  const router = useRouter();
 
   const [menuState, setMenuState] = useState(false);
   const [opacity, setOpacity] = useState(false);
@@ -50,10 +52,10 @@ export default function Navbar() {
       src={closeIcon.src} 
       alt="close icon" 
         onClick={()=>{setMenuState(HandleClick);}} />
-      <a>Home</a>
-      <a>UX/UI & Development</a>
-      <a>Graphic Design</a>
-      <a>About</a>
+        <a onClick={()=> router.push("/")} >Home</a>
+        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
+        {/* <a onClick={()=> router.push("/")} >Graphic Design</a> */}
+        <a onClick={()=> router.push("/about")} >About</a>
     </MenuPanel>
 
   </MenuPanelCont>
@@ -61,10 +63,10 @@ export default function Navbar() {
       <a className='logo'>Irene Wu</a>
       {/* desktop menu bar */}
       <div className='desktop-menu'>
-        <a>Home</a>
-        <a>UX/UI & Development</a>
-        <a>Graphic Design</a>
-        <a>About</a>
+        <a onClick={()=> router.push("/")}>Home</a>
+        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
+        {/* <a onClick={()=> router.push("/")} >Graphic Design</a> */}
+        <a onClick={()=> router.push("/about")} >About</a>
       </div>
       {/* mobile menu hamburger */}
       <img className='menu-icon'
