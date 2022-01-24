@@ -22,25 +22,28 @@ export default function Works() {
       githubLink='https://github.com/irenewuu/kalm-app'
       previewLink='https://kalm-app.vercel.app/auth/home/0'
       projectPage={()=>router.push('/projects/kalm')}
+      techUsed='Figma&emsp;React.js&emsp;Styled-Components'
     
     />
     <WorkDisplay 
       imgPreview={RevampImg}
       title="reVamp"
-      figmaLink=''
-      githubLink=''
-      previewLink=''
+      figmaLink='https://www.figma.com/file/737HCHw3VZQWXFjp55oJ32/reVamp-Web-Application?node-id=1069%3A8283'
+      githubLink='https://github.com/irenewuu/revamp'
+      previewLink='https://revamp.vercel.app/'
       description='This web application provides sustainable ways to reduce environmental impact by showing how to repurpose your clothes, where donate your old garments, or showing the impacts of fast fashion on our planet.'
       projectPage={()=>router.push('/projects/kalm')}
+      techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
     />
     <WorkDisplay 
       imgPreview={SfImg}
       title="S/F Hackathon"
-      figmaLink=''
-      githubLink=''
-      previewLink=''
+      figmaLink='https://www.figma.com/file/WVwcDF8enJTjMFmXhTvbQS/SF-MongoDB-Hackathon-2022?node-id=97%3A236'
+      githubLink='https://github.com/irenewuu/E-Commerce-MongoDB-Hackathon-2022'
+      previewLink='https://streetzfootwear.vercel.app/'
       description='S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search in less than one month for a hackathon hosted by MongoDB.'
       projectPage={()=>router.push('/projects/kalm')}
+      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'
     />
   </div>
 </div>

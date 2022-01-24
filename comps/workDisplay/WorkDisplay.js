@@ -11,6 +11,7 @@ export default function WorkDisplay({
     previewLink="",
     description="Kalm is a self-help web application for stress and anxiety management. It provides convenient access to emotional relief activities and emergency relief, to combat certain unhealthy feelings such as stress and anxiety.",
     projectPage="",
+    techUsed=""
 
 }) {
   return <div className='display-cont'>
@@ -24,8 +25,9 @@ export default function WorkDisplay({
                 <a href={previewLink} target="_blank"><img src={LinkOut.src} /></a>
             </div>
           </div>
-          <p>{description}</p>
+          <p className='display-descript'>{description}</p>
           <a className='read-more-link' onClick={projectPage}>Read more &gt;</a>
+          <p className='tech-used'>{techUsed}</p>
       </div>
   </div>
 }

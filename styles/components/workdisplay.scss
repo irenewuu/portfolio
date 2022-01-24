@@ -1,3 +1,5 @@
+
+@import './../variables/general.scss';
 .display-cont {
     display: flex;
     flex-direction: row;
@@ -17,7 +19,7 @@
 .display-info-cont {
     position: relative;
     width: 450px;
-    max-height: 500px;
+    min-height: 200px;
     padding: 24px;
     
     background-color: $cream;
@@ -27,14 +29,20 @@
     .display-header {
         margin-bottom: 16px;
     }
-    p {
+
+    .display-links {
+        img {
+            margin-left: 21px;
+        }
+    }
+
+    .display-descript {
         margin-bottom: 72px;
     }
-}
-
-.display-links {
-    img {
-        margin-left: 21px;
+    .tech-used {
+        position: absolute;
+        bottom: -30px;
+        color: $detailText;
     }
 }
 
@@ -43,4 +51,10 @@
     bottom: 24px;
     color: $link;
     text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $lg) {
+
+    
 }

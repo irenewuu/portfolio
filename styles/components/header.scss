@@ -87,7 +87,7 @@
         justify-content: center;
     }
 
-    .header-cont .info-cont div, 
+    .header-cont .info-cont div:first-child, 
     .header-cont .img-info-cont div:first-child { 
         width: 80%; 
     }
