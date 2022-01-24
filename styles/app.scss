@@ -15,7 +15,7 @@
 @import './components/header.scss';
 
 
-// remove defaults ======================================================
+// remove defaults, containers, bg decorations ======================================================
 * {
   margin: 0;
   padding: 0;
@@ -27,18 +27,25 @@ html {
 }
 
 html, #__next, body, .centered-cont { 
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-html, #__next, body, .centered-cont, .full-width-cont {
-  box-sizing: border-box;
   width: 100%;
 }
 
-.border {
-  padding: 0 24px;
+.bg-deco {
+  overflow-y: visible;
+  position: absolute;
+  height: 100vh;
+  width: 120vw; 
+  z-index: -2;
 }
+.tablet-deco { display: none; }
+.desktop-deco { display: block; }
 
 // text styleguide ======================================================
 h1, h2, h3, h4, h5, h6, nav a { 
@@ -62,6 +69,10 @@ p, a, label, button, input[type="button"]
 { font-size: 16px; }
 
 // media queries ========================================================
+@media screen and (max-width: $lgst) {
+  .bg-deco { width: 110vw;}
+}
+
 
 @media screen and (max-width: $lg) {
   h1 { font-size: 48px; }
@@ -70,6 +81,8 @@ p, a, label, button, input[type="button"]
   h4 { font-size: 30px; }
   h5 { font-size: 24px; }
   h6 { font-size: 20px; }
+  .tablet-deco { display: block; }
+  .desktop-deco { display: none; }
 
 }
 @media screen and (max-width: $md) {
@@ -80,5 +93,14 @@ h3 { font-size: 24px; }
 h4 { font-size: 20px; }
 h5 { font-size: 18px; }
 h6 { font-size: 18px; }
+.tablet-deco { display: block; }
+.desktop-deco { display: none; }
 
+}
+@media screen and (max-width: $sm) {
+    .bg-deco { 
+      width: 140vw;
+    }
+    .desktop-deco { display: none; }
+    
 }

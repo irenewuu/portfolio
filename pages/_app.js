@@ -1,5 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
+import desktopDeco from './../assets/header-deco.svg'
+import tabletDeco from './../assets/mobile-header-deco.svg'
 
 import '../styles/app.scss';
 
@@ -13,6 +15,8 @@ function MyApp({ Component, pageProps }) {
       <title>Irene Wu</title>
     </Head>
     <Navbar />
+      <img src={desktopDeco.src} className='bg-deco desktop-deco' />
+      <img src={tabletDeco.src} className='bg-deco tablet-deco' />
     <Component {...pageProps} />
     <Footer />
   </div>)

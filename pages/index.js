@@ -1,13 +1,26 @@
 import Header from "../comps/header/Header";
-import downarrow from '../assets/down-arrow.svg';
 
 export default function Home() {
   return <div className="centered-cont">
     <Header />
-    <img className="down-arrow" src={downarrow.src} />
-    <div className="full-width-cont border">
+    <div className="recent-works-cont">
       <h3>My Recent Works</h3>
-
+        <div className="recent-works">
+          <div className="lg-recent-work">
+            <img src="" />
+          </div>
+          <div className="sm-recent-work">
+            <img src="" />
+          </div>
+        </div>
+        <div className="recent-works">
+          <div className="lg-recent-work">
+            <img src="" />
+          </div>
+          <div className="sm-recent-work">
+            <img src="" />
+          </div>
+        </div>
     </div>
   </div>
 }
