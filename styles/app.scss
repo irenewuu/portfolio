@@ -13,6 +13,7 @@
 @import './components/navbar.scss';
 @import './components/footer.scss';
 @import './components/header.scss';
+@import './components/workdisplay.scss';
 
 
 // remove defaults, containers, bg decorations ======================================================
@@ -34,6 +35,13 @@ html, #__next, body, .centered-cont {
   flex-direction: column;
   align-items: center;
   width: 100%;
+}
+
+.row-space-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .bg-deco {
