@@ -36,13 +36,15 @@
             div {
                 position: absolute;
                 margin-top: 0;
-                top: 0;
+                top: -20px;
+                left: -20px;
                 z-index: -1;
                 width: 100%;
                 height: 100%;
                 background: rgba(255, 252, 250, 0.4);
-                filter: blur(10px);
+                filter: blur(16px);
                 border-radius: 100px;
+                padding: 24px;
 
             }
         }
@@ -51,7 +53,7 @@
         column-gap: 175px;
     }
 
-    .info-cont div { width: 60%; }
+    .info-cont div:first-child { width: 60%; }
     .img-info-cont div:first-child { width: 50%; }
 
 }

@@ -9,7 +9,10 @@ export default function Header({
       <div className='info-cont'>
           <div>
             <h1>{header}</h1>
-            <p>{description}</p>
+            <div>
+              <p>{description}</p>
+              <div></div>
+            </div>
           </div>
       </div>
       <img className="down-arrow" src={downarrow.src} />
