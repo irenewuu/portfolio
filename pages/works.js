@@ -17,6 +17,16 @@ export default function Works() {
   />
   <div>
     <WorkDisplay 
+      imgPreview={SfImg}
+      title="S/F Hackathon"
+      figmaLink='https://www.figma.com/file/WVwcDF8enJTjMFmXhTvbQS/SF-MongoDB-Hackathon-2022?node-id=97%3A236'
+      githubLink='https://github.com/irenewuu/E-Commerce-MongoDB-Hackathon-2022'
+      previewLink='https://streetzfootwear.vercel.app/'
+      description='S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search in less than one month for a hackathon hosted by MongoDB.'
+      projectPage={()=>router.push('/projects/sf')}
+      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'
+    />
+    <WorkDisplay 
       imgPreview={KalmImg}
       figmaLink='https://www.figma.com/proto/NofvrFzll8aKm0PXDafOAb/Kalm-Project?node-id=814%3A1754&scaling=min-zoom&page-id=797%3A1587&starting-point-node-id=814%3A1614'
       githubLink='https://github.com/irenewuu/kalm-app'
@@ -32,18 +42,8 @@ export default function Works() {
       githubLink='https://github.com/irenewuu/revamp'
       previewLink='https://revamp.vercel.app/'
       description='This web application provides sustainable ways to reduce environmental impact by showing how to repurpose your clothes, where donate your old garments, or showing the impacts of fast fashion on our planet.'
-      projectPage={()=>router.push('/projects/work')}
+      projectPage={()=>router.push('/projects/revamp')}
       techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
-    />
-    <WorkDisplay 
-      imgPreview={SfImg}
-      title="S/F Hackathon"
-      figmaLink='https://www.figma.com/file/WVwcDF8enJTjMFmXhTvbQS/SF-MongoDB-Hackathon-2022?node-id=97%3A236'
-      githubLink='https://github.com/irenewuu/E-Commerce-MongoDB-Hackathon-2022'
-      previewLink='https://streetzfootwear.vercel.app/'
-      description='S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search in less than one month for a hackathon hosted by MongoDB.'
-      projectPage={()=>router.push('/projects/work')}
-      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'
     />
   </div>
 </div>

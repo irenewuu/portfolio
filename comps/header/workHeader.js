@@ -18,13 +18,14 @@ export default function WorkHeader({
               <p><b>Project Type: </b>{projectType}</p>
               <p><b>Role: </b>{role}</p>
               <p><b>Tools: </b>{tools}</p>
+              <p className='attribution'>Device Mockup on the right created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a></p>
               {/* <div></div> */}
             </div>
           </div>
           <div className='project-preview'>
-            <img src={img.src} />
+            <img src={img.src} alt="" />
           </div>
       </div>
-      <img className="down-arrow" src={downarrow.src} />
+      <img className="down-arrow" src={downarrow.src} alt="" />
     </div>
 }

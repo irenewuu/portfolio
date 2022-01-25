@@ -89,7 +89,14 @@
     padding: 0 48px;
     
     div:first-of-type {
-        width: 60%;
+        width: 80%;
+        p {
+            margin: 4px 0;
+        }
+        .attribution {
+            color: $detailText;
+            font-style: italic;
+        }
     }
     .project-preview {
         width: 50%;
@@ -172,7 +179,12 @@
     .down-arrow { width: 16px; }
     
     // work header ================================
-    .project-cont .project-preview {
-        display: none;
+    .project-cont {
+        div:first-of-type .attribution {
+            display: none;
+        }
+        .project-preview {
+            display: none;
+        }
     }
 }

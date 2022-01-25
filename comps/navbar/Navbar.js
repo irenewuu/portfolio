@@ -52,21 +52,23 @@ export default function Navbar() {
       src={closeIcon.src} 
       alt="close icon" 
         onClick={()=>{setMenuState(HandleClick);}} />
-        <a onClick={()=> router.push("/")} >Home</a>
-        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
-        <a onClick={()=> router.push("/otherworks")} >Other Works</a>
-        <a onClick={()=> router.push("/about")} >About</a>
-    </MenuPanel>
-
-  </MenuPanelCont>
-    <nav>
-      <a className='logo'>Irene Wu</a>
-      {/* desktop menu bar */}
-      <div className='desktop-menu'>
         <a onClick={()=> router.push("/")}>Home</a>
         <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
         <a onClick={()=> router.push("/otherworks")} >Other Works</a>
         <a onClick={()=> router.push("/about")} >About</a>
+        {/* <a href="" download>Resume</a> */}
+    </MenuPanel>
+
+  </MenuPanelCont>
+    <nav>
+      <a onClick={()=> router.push("/")} className='logo'>Irene Wu</a>
+      {/* desktop menu bar */}
+      <div className='desktop-menu'>
+        {/* <a onClick={()=> router.push("/")}>Home</a> */}
+        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
+        <a onClick={()=> router.push("/otherworks")} >Other Works</a>
+        <a onClick={()=> router.push("/about")} >About</a>
+        {/* <a href="" download>Resume</a> */}
       </div>
       {/* mobile menu hamburger */}
       <img className='menu-icon'

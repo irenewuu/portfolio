@@ -15,14 +15,14 @@ export default function WorkDisplay({
 
 }) {
   return <div className='display-cont'>
-      <img className='display-img' src={imgPreview.src} />
+      <img className='display-img' src={imgPreview.src} alt="preview work" />
       <div className='display-info-cont'>
           <div className='row-space-between display-header'>
             <h3>{title}</h3>
             <div className='display-links'>
-                <a href={figmaLink} target="_blank"><img src={Figma.src} /></a>
-                <a href={githubLink} target="_blank"><img src={Github.src} /></a>
-                <a href={previewLink} target="_blank"><img src={LinkOut.src} /></a>
+                <a href={figmaLink} target="_blank"><img src={Figma.src} alt="figma icon" /></a>
+                <a href={githubLink} target="_blank"><img src={Github.src} alt="github icon" /></a>
+                <a href={previewLink} target="_blank"><img src={LinkOut.src} alt="preview icon" /></a>
             </div>
           </div>
           <p className='display-descript'>{description}</p>

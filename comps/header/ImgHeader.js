@@ -16,9 +16,9 @@ export default function ImgHeader({
             </div>
           </div>
           <div className='profile-img-cont'>
-            <img src={img}/>
+            <img src={img} alt='profile image' />
           </div>
       </div>
-      <img className="down-arrow" src={downarrow.src} />
+      <img className="down-arrow" src={downarrow.src} alt="down arrow"/>
     </div>
 }

@@ -11,10 +11,10 @@ export default function Header({
             <h1>{header}</h1>
             <div>
               <p>{description}</p>
-              <div></div>
+              {/* <div></div> */}
             </div>
           </div>
       </div>
-      <img className="down-arrow" src={downarrow.src} />
+      <img className="down-arrow" src={downarrow.src} alt="down arrow" />
   </div>
 }
