@@ -1,6 +1,6 @@
 import React from 'react';
-import WorkHeader from '../../comps/header/WorkHeader';
-import KalmMobile from './../../assets/kalm/kalm-mobile.png'
+import WorkHeader from './../../comps/header/workHeader';
+import KalmMobile from './../../assets/kalm/kalm-mobile.png';
 
 export default function Project() {
   return <div className="centered-cont">
