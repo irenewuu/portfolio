@@ -54,7 +54,7 @@ export default function Navbar() {
         onClick={()=>{setMenuState(HandleClick);}} />
         <a onClick={()=> router.push("/")} >Home</a>
         <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
-        {/* <a onClick={()=> router.push("/")} >Graphic Design</a> */}
+        <a onClick={()=> router.push("/otherworks")} >Other Works</a>
         <a onClick={()=> router.push("/about")} >About</a>
     </MenuPanel>
 
@@ -65,7 +65,7 @@ export default function Navbar() {
       <div className='desktop-menu'>
         <a onClick={()=> router.push("/")}>Home</a>
         <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
-        {/* <a onClick={()=> router.push("/")} >Graphic Design</a> */}
+        <a onClick={()=> router.push("/otherworks")} >Other Works</a>
         <a onClick={()=> router.push("/about")} >About</a>
       </div>
       {/* mobile menu hamburger */}
