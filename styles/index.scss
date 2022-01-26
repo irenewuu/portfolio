@@ -1,16 +1,15 @@
-
 @import './variables/general.scss';
 
-.recent-works-cont {
-    box-sizing: border-box;
-    width: 80%;
-    max-width: 1400px;
-    padding: 0 24px;
+// .recent-works-cont {
+//     box-sizing: border-box;
+//     width: 80%;
+//     max-width: 1400px;
+//     padding: 0 24px;
 
-    h3 {
-        width: 100%;
-    }
-}
+//     h3 {
+//         width: 100%;
+//     }
+// }
 .recent-works:first-of-type {
     flex-direction: row;
 }
@@ -38,9 +37,9 @@
 }
 
 @media screen and (max-width: $lg) {
-    .recent-works-cont {
-        width: 650px;
-    }
+    // .recent-works-cont {
+    //     width: 650px;
+    // }
     .recent-works, .recent-works:first-of-type {
         flex-direction: column;
         row-gap: 12px;
@@ -51,9 +50,9 @@
     }
 }
 @media screen and (max-width: $md) {
-    .recent-works-cont {
-        width: 100%;
-    }
+    // .recent-works-cont {
+    //     width: 100%;
+    // }
     .recent-works, .recent-works:first-of-type {
         .lg-recent-work, .sm-recent-work {
             width: 100%;
@@ -62,9 +61,9 @@
     
 }
 @media screen and (max-width: $sm) {
-    .recent-works-cont {
-        width: 100%;
-    }
+    // .recent-works-cont {
+    //     width: 100%;
+    // }
     .recent-works, .recent-works:first-of-type {
         .lg-recent-work, .sm-recent-work {
             width: 100%;

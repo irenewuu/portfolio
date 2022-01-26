@@ -10,5 +10,8 @@ export default function Project() {
       tools='Figma, React.js, Styled-Components'
       img={KalmMobile}
     />
+    <div className='page-info-cont'>
+      <h3></h3>
+    </div>
   </div>;
 }

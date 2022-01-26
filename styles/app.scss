@@ -37,6 +37,17 @@ html, #__next, body, .centered-cont {
   width: 100%;
 }
 
+.page-info-cont {
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 1400px;
+  padding: 0 24px;
+
+  h3 {
+      width: 100%;
+  }
+}
+
 .row-space-between {
   display: flex;
   flex-direction: row;
@@ -60,7 +71,7 @@ h1, h2, h3, h4, h5, h6, nav a {
   font-weight: 400;
   color: $darkbrown;
 }
-p, a, label, button, input[type="button"], pre { 
+p, a, label, button, input[type="button"], pre, li { 
   font-family: 'Inria Sans', sans-serif;
   color: $darkbrown;
 }
@@ -90,18 +101,23 @@ p, a, label, button, input[type="button"]
   h6 { font-size: 20px; }
   .tablet-deco { display: block; }
   .desktop-deco { display: none; }
+  .page-info-cont {
+      width: 650px;
+  }
 
 }
 @media screen and (max-width: $md) {
-  
-h1 { font-size: 36px; }
-h2 { font-size: 30px; }
-h3 { font-size: 24px; }
-h4 { font-size: 20px; }
-h5 { font-size: 18px; }
-h6 { font-size: 18px; }
-.tablet-deco { display: block; }
-.desktop-deco { display: none; }
+  h1 { font-size: 36px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 24px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 18px; }
+  .tablet-deco { display: block; }
+  .desktop-deco { display: none; }
+  .page-info-cont {
+      width: 100%;
+  }
 
 }
 @media screen and (max-width: $sm) {
@@ -109,5 +125,9 @@ h6 { font-size: 18px; }
       width: 140vw;
     }
     .desktop-deco { display: none; }
+
+    .page-info-cont {
+        width: 100%;
+    }
     
 }

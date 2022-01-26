@@ -12,7 +12,7 @@
     margin: 0 48px;
     position: relative;
     top: -60px;
-    z-index: -1;
+    // z-index: -1;
     // header and image header ============================
 
     .info-cont, .img-info-cont {
@@ -32,7 +32,7 @@
             position: relative;
             p {
                 z-index: 100;
-                filter: none;
+                // filter: none;
             }
             div {
                 position: absolute;

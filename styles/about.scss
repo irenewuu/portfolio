@@ -1,0 +1,11 @@
+.skills-cont {
+    display: flex;
+    flex-direction: row;
+    // column-gap: 48px;
+    column-gap: 15%;
+
+    li {
+        list-style-type: none;
+        margin: 24px 0;
+    }
+}
