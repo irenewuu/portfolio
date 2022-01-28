@@ -25,7 +25,7 @@ export default function Project() {
       <section>
         <div>
           <h4>Project Brief</h4>
-          <p>S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search. You can browse the products by all, gender, or collection, and can also filter by shoe sizes and price. There is also a search function, where it uses MongoDB's Atlas Search to find the products you want to look for.</p>
+          <p>S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search. You can browse the products by all, gender, or collection, and can also filter by shoe sizes and price. There is also a search function, where it uses MongoDB&#39;s Atlas Search to find the products you want to look for.</p>
         <img src={Products.src} />
         </div>
       </section>
