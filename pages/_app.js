@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (<div className='centered-cont'>
     <Head>
       <title>Irene Wu</title>
+      <link ref='icon' href="/icon.png" />
     </Head>
     <Navbar />
       <img src={desktopDeco.src} className='bg-deco desktop-deco' />
