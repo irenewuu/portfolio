@@ -1,5 +1,8 @@
 import React from 'react';
+import { motion } from "framer-motion";
+// components
 import WorkHeader from '../../comps/header/WorkHeader';
+// images
 import KalmMobile from './../../assets/kalm/kalm-mobile.png';
 import Home from './../../assets/kalm/kalm-howareyou.png';
 import Gratitude from './../../assets/kalm/kalm-gratitude.png';
@@ -7,7 +10,11 @@ import Relief from './../../assets/kalm/kalm-relief.png';
 import Focus from './../../assets/kalm/kalm-focus.png';
  
 export default function Project() {
-  return <div className="centered-cont">
+  return <motion.div 
+  className="centered-cont"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
     <WorkHeader 
       header='Kalm'
       projectType='6 person Collaborative Project'
@@ -41,5 +48,5 @@ export default function Project() {
         <img src={Home.src} />
       </section>
     </div>
-  </div>;
+  </motion.div>;
 }

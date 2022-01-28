@@ -1,12 +1,19 @@
 import React from 'react';
+import { motion } from "framer-motion";
+// components
 import WorkHeader from '../../comps/header/WorkHeader';
+// images
 import SFMobile from './../../assets/sf/sf-mobile.png';
 import Homepage from './../../assets/sf/sf-homepage.png';
 import Products from './../../assets/sf/sf-products.png';
 import Product from './../../assets/sf/sf-product.png';
 
 export default function Project() {
-  return <div className="centered-cont">
+  return <motion.div 
+  className="centered-cont"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
     <WorkHeader 
       header='SF E-Commerce'
       projectScope='1 month'
@@ -37,5 +44,5 @@ export default function Project() {
         </div>
       </section>
     </div>
-  </div>;
+  </motion.div>;
 }

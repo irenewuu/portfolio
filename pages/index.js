@@ -15,7 +15,7 @@ export default function Home() {
     className="centered-cont"
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ delay: 0.2, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
+    transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
     <Header />
     {/* <div className="recent-works-cont"> */}
     <div className="page-info-cont">

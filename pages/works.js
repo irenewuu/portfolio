@@ -1,8 +1,10 @@
 import React from 'react';
+import { motion } from "framer-motion";
 import {useRouter} from 'next/router';
+// components
 import Header from "../comps/header/Header";
 import WorkDisplay from '../comps/workDisplay/WorkDisplay';
-
+// images
 import KalmImg from './../assets/kalm/kalm-activities.png';
 import RevampImg from './../assets/revamp/revamp-popular.png';
 import SfImg from './../assets/sf/sf-homepage.png';
@@ -10,7 +12,11 @@ import SfImg from './../assets/sf/sf-homepage.png';
 export default function Works() {
 	const router = useRouter();
 
-  return <div className="centered-cont">
+  return <motion.div 
+  className="centered-cont"
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
   <Header 
     header='UX/UI & Development'
     description='Here are some of the UX/UI design and Front-end development projects I have worked on the past two years.'
@@ -46,5 +52,5 @@ export default function Works() {
       techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
     />
   </div>
-</div>
+</motion.div>
 }

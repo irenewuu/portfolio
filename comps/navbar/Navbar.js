@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import menuIcon from '../../assets/menu-icon.svg';
 import closeIcon from '../../assets/close-icon.svg';
+import Logo from '../../assets/icon-logo.svg';
 
 
 const MenuPanelCont = styled.div`
@@ -61,7 +62,14 @@ export default function Navbar() {
 
   </MenuPanelCont>
     <nav>
-      <a onClick={()=> router.push("/")} className='logo'>Irene Wu</a>
+      {/* <a onClick={()=> router.push("/")} className='logo'>Irene Wu</a> */}
+      <a 
+        onClick={()=> router.push("/")} 
+        className='logo'
+        
+      >
+        <img src={Logo.src} />
+      </a>
       {/* desktop menu bar */}
       <div className='desktop-menu'>
         {/* <a onClick={()=> router.push("/")}>Home</a> */}
