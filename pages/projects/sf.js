@@ -8,7 +8,7 @@ import Product from './../../assets/sf/sf-product.png';
 export default function Project() {
   return <div className="centered-cont">
     <WorkHeader 
-      header='SF Hackathon'
+      header='SF E-Commerce'
       projectScope='1 month'
       projectType='2 person Collaborative Project'
       tools='Figma, Next.js, Sass, MongoDB Atlas Search'

@@ -18,7 +18,7 @@ export default function Works() {
   <div>
     <WorkDisplay 
       imgPreview={SfImg}
-      title="S/F Hackathon"
+      title="S/F E-Commerce"
       figmaLink='https://www.figma.com/file/WVwcDF8enJTjMFmXhTvbQS/SF-MongoDB-Hackathon-2022?node-id=97%3A236'
       githubLink='https://github.com/irenewuu/E-Commerce-MongoDB-Hackathon-2022'
       previewLink='https://streetzfootwear.vercel.app/'
