@@ -1,11 +1,36 @@
 .skills-cont {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     // column-gap: 48px;
-    column-gap: 15%;
+    // width: 100%;
+    column-gap: 48px ;
+
+    div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 60px ;
+    }
 
     li {
         list-style-type: none;
         margin: 24px 0;
+    }
+}
+
+@media screen and (max-width: $lg) {
+    .skills-cont {
+        // column-gap: 10%;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .skills-cont {
+        // width: 100%;
+        ul {
+            width: 40%;
+        }
     }
 }

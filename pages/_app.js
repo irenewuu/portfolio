@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
   >
     <Head>
       <title>Irene Wu</title>
-      {/* <link ref="icon" href="icon.png" /> */}
+      <link ref="icon" href="icon.png" />
     </Head>
     <Navbar />
       <img src={desktopDeco.src} className='bg-deco desktop-deco' />

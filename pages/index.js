@@ -1,5 +1,6 @@
 import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
+import Head from 'next/head';
 // component
 import Header from "../comps/header/Header";
 // images
@@ -17,6 +18,10 @@ export default function Home() {
     animate={{ opacity: 1 }}
     transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
     <Header />
+    <Head>
+      
+      <link ref="icon" href="favicon.ico" />
+    </Head>
     {/* <div className="recent-works-cont"> */}
     <div className="page-info-cont">
       <h3>My Recent Works</h3>

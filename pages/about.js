@@ -19,6 +19,7 @@ export default function About() {
   <div className='page-info-cont'>
     <h3>My Skills</h3>
     <div className='skills-cont'>
+      {/* <div> */}
       <ul>
         <li>Front-end Development</li>
         <li>Responsive Coding</li>
