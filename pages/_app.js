@@ -12,7 +12,7 @@ import Footer from '../comps/footer/Footer';
 
 const AppCont = styled(motion.div)``;
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps}) {
   return (<AppCont 
     className='centered-cont'
     exit={{opacity: 0}}
@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
   >
     <Head>
       <title>Irene Wu</title>
-      <link ref="shortcut icon" href="/icon.png" />
+      <link rel='icon' href='/icon.svg' />
     </Head>
     <Navbar />
       <img src={desktopDeco.src} className='bg-deco desktop-deco' />
