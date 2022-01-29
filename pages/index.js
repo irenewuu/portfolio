@@ -20,7 +20,8 @@ export default function Home() {
     <Header />
     <Head>
       
-      <link ref={"icon"} href="favicon.ico" />
+    {/* <link ref='icon' href="/favicon.ico" /> */}
+      <link ref='icon' href="/icon.png" />
     </Head>
     {/* <div className="recent-works-cont"> */}
     <div className="page-info-cont">
