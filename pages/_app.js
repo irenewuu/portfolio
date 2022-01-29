@@ -15,14 +15,12 @@ const AppCont = styled(motion.div)``;
 function MyApp({ Component, pageProps }) {
   return (<AppCont 
     className='centered-cont'
-    // initial={{opacity: 0}}
-    // animate={{opacity: 1}}
     exit={{opacity: 0}}
     transition={{duration: 1, ease: [0.43, 0.13, 0.23, 0.96]}}
   >
     <Head>
       <title>Irene Wu</title>
-      <link ref="icon" href="icon.png" />
+      {/* <link ref="icon" href="icon.png" /> */}
     </Head>
     <Navbar />
       <img src={desktopDeco.src} className='bg-deco desktop-deco' />
