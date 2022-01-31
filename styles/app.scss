@@ -39,6 +39,29 @@ html, #__next, body, .centered-cont {
   width: 100%;
 }
 
+button {
+  margin: 12px 0;
+  padding: 8px 48px;
+  background-color: $cream;
+  border: 1px solid $darkbrown;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+
+  a {
+    text-decoration: none;
+    // font-weight: lighter;
+    text-transform: uppercase;
+  }
+}
+button:hover {
+  background-color: $darkbrown;
+  
+  a {
+    color: $cream;
+  }
+}
+
 .page-info-cont {
   box-sizing: border-box;
   width: 80%;

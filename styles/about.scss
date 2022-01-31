@@ -1,36 +1,68 @@
+.info-cont {
+    margin-top: 48px;
+    box-sizing: border-box;
+    width: 80%;
+}
+
 .skills-cont {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     // column-gap: 48px;
-    // width: 100%;
     column-gap: 48px ;
 
     div {
         width: 100%;
         display: flex;
         flex-direction: row;
-        column-gap: 60px ;
+        column-gap: 60px;
     }
 
+    ul {
+        width: 200px;
+    }
     li {
         list-style-type: none;
         margin: 24px 0;
     }
 }
 
+.connect-cont {
+
+    p {
+        margin: 24px 0;
+    }
+}
+
 @media screen and (max-width: $lg) {
+    .info-cont {
+        padding: 48px;
+        width: 80%;
+    }
     .skills-cont {
-        // column-gap: 10%;
+        column-gap: 36px;
+        ul {
+            width: 150px;
+        }
     }
 }
 
 @media screen and (max-width: $md) {
+    .info-cont {
+        width: 100%;
+        padding: 24px;
+    }
     .skills-cont {
+        column-gap: 12px;
         // width: 100%;
         ul {
-            width: 40%;
+            width: 175px;
         }
+    }
+}
+@media screen and (max-width: $sm) {
+    .skills {
+        display: none;
     }
 }
