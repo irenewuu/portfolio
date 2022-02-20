@@ -15,7 +15,7 @@ export default function About() {
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
   <ImgHeader 
     header='About Me'
-    description='Hello! My name is Irene and I enjoy creating and developing things for the web. I reside in Vancouver, BC, and will be graduating from the Digital Design and Development Program at British Columbia Institute of Technology, in May 2022. I have been exploring various fields, such as graphic design, video production and UI/UX design, and will continuously focus on front-end development as they are my area of interest. '
+    description='Hello! My name is Irene and I enjoy designing and developing things for the web. I reside in Vancouver, BC, and will be graduating from the Digital Design and Development Program at British Columbia Institute of Technology, in May 2022. I have been exploring various fields, such as graphic design, video production and UI/UX design, and will continuously focus on web development as they are my area of interest. '
     img={Me.src}
   />
 

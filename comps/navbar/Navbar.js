@@ -54,7 +54,7 @@ export default function Navbar() {
       alt="close icon" 
         onClick={()=>{setMenuState(HandleClick);}} />
         <a onClick={()=> router.push("/")}>Home</a>
-        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
+        <a onClick={()=> router.push("/works")} >Development Works</a>
         {/* <a onClick={()=> router.push("/otherworks")} >Other Works</a> */}
         <a onClick={()=> router.push("/about")} >About</a>
         {/* <a href="" download>Resume</a> */}
@@ -73,7 +73,7 @@ export default function Navbar() {
       {/* desktop menu bar */}
       <div className='desktop-menu'>
         {/* <a onClick={()=> router.push("/")}>Home</a> */}
-        <a onClick={()=> router.push("/works")} >UX/UI & Development</a>
+        <a onClick={()=> router.push("/works")} >Development Works</a>
         {/* <a onClick={()=> router.push("/otherworks")} >Other Works</a> */}
         <a onClick={()=> router.push("/about")} >About</a>
         {/* <a href="" download>Resume</a> */}

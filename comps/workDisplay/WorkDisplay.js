@@ -18,7 +18,7 @@ export default function WorkDisplay({
       <img className='display-img' src={imgPreview.src} alt="preview work" />
       <div className='display-info-cont'>
           <div className='row-space-between display-header'>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <div className='display-links'>
                 <a href={figmaLink} target="_blank"><img src={Figma.src} alt="figma icon" /></a>
                 <a href={githubLink} target="_blank"><img src={Github.src} alt="github icon" /></a>

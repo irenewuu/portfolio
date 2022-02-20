@@ -14,7 +14,28 @@
     top: -60px;
     // z-index: -1;
     // header and image header ============================
-
+    .home-info-cont {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        max-width: 1400px;
+        width: 100%;
+        height: 100%;
+        padding: 0 48px;
+        div {
+            position: relative;
+            left:30px;
+            width: 50%;
+        }
+        .home-img {
+            display: block;
+            position: relative;
+            left: -50px;
+            width: 45%;
+        }
+    }
     .info-cont, .img-info-cont {
         box-sizing: border-box;
         display: flex;
@@ -147,6 +168,22 @@
 
 @media screen and (max-width: $md) {
     .header-cont .img-info-cont { flex-direction: column-reverse; }
+    .header-cont .home-info-cont {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        
+        div {
+            position: relative;
+            left: 0;
+            width: 100%;
+        }
+        .home-img {
+            left: -10px;
+            width: 70%;
+        margin-bottom: 24px;
+        }
+    }
     .header-cont .img-info-cont div:first-child { width: 100%; }
 
     .profile-img-cont {
@@ -177,6 +214,13 @@
     .header-cont .bg-deco { width: 120vw;}
     .header-cont .info-cont div:first-child { width: 100%; }
     .desktop-deco { display: none; }
+    .header-cont .home-info-cont {
+        div {
+            position: relative;
+            left: 0;
+        }
+        .home-img { width: 80%; }
+    }
     .down-arrow { width: 16px; }
     
     // work header ================================

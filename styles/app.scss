@@ -66,7 +66,7 @@ button:hover {
   box-sizing: border-box;
   width: 80%;
   max-width: 1400px;
-  padding: 0 24px;
+  // padding: 0 24px;
 
   h3 {
       width: 100%;
@@ -101,10 +101,10 @@ p, a, label, button, input[type="button"], pre, li {
   color: $darkbrown;
 }
 
-h1 { font-size: 60px; }
-h2 { font-size: 48px; }
-h3 { font-size: 40px; }
-h4 { font-size: 36px; }
+h1 { font-size: 48px; }
+h2 { font-size: 40px; }
+h3 { font-size: 36px; }
+h4 { font-size: 30px; }
 h5 { font-size: 24px; }
 h6 { font-size: 20px; }
 
@@ -118,16 +118,17 @@ p, a, label, button, input[type="button"]
 
 
 @media screen and (max-width: $lg) {
-  h1 { font-size: 48px; }
-  h2 { font-size: 40px; }
-  h3 { font-size: 36px; }
-  h4 { font-size: 30px; }
-  h5 { font-size: 24px; }
-  h6 { font-size: 20px; }
+  h1 { font-size: 40px; }
+  h2 { font-size: 36px; }
+  h3 { font-size: 30px; }
+  h4 { font-size: 24px; }
+  h5 { font-size: 20px; }
+  h6 { font-size: 18px; }
   .tablet-deco { display: block; }
   .desktop-deco { display: none; }
   .page-info-cont {
       width: 650px;
+      padding: 0 24px;
   }
 
 }
@@ -146,13 +147,20 @@ p, a, label, button, input[type="button"]
 
 }
 @media screen and (max-width: $sm) {
-    .bg-deco { 
-      width: 140vw;
-    }
-    .desktop-deco { display: none; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 24px; }
+  h3 { font-size: 22px; }
+  h4 { font-size: 20px; }
+  h5 { font-size: 18px; }
+  h6 { font-size: 18px; }
+  
+  .bg-deco { 
+    width: 140vw;
+  }
+  .desktop-deco { display: none; }
 
-    .page-info-cont {
-        width: 100%;
-    }
+  .page-info-cont {
+      width: 100%;
+  }
     
 }

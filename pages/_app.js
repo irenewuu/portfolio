@@ -21,10 +21,11 @@ function MyApp({ Component, pageProps}) {
     <Head>
       <title>Irene Wu</title>
       <link rel='icon' href='/icon.svg' />
+      {/* <script src="/bg.js" /> */}
     </Head>
     <Navbar />
-      <img src={desktopDeco.src} className='bg-deco desktop-deco' />
-      <img src={tabletDeco.src} className='bg-deco tablet-deco' />
+      {/* <img src={desktopDeco.src} className='bg-deco desktop-deco' /> */}
+      {/* <img src={tabletDeco.src} className='bg-deco tablet-deco' /> */}
       <AnimateSharedLayout>
         <Component {...pageProps} />
       </AnimateSharedLayout>

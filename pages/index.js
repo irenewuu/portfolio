@@ -2,11 +2,12 @@ import {useRouter} from 'next/router';
 import { motion } from "framer-motion";
 import Head from 'next/head';
 // component
-import Header from "../comps/header/Header";
+import HomeHeader from "../comps/header/HomeHeader";
 // images
 import SF from '../assets/sf/sf-homepage.png';
 import Kalm from '../assets/kalm/kalm-activities.png'
 import Linkout from '../assets/linkout_white.svg';
+import Vector from '../assets/homepage_vector.svg';
 
 export default function Home() {
   const router = useRouter();
@@ -17,7 +18,9 @@ export default function Home() {
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
-    <Header />
+    <HomeHeader 
+      img={Vector.src}
+    />
     <Head>
       
     {/* <link ref='icon' href="/favicon.ico" /> */}

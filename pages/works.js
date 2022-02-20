@@ -17,10 +17,14 @@ export default function Works() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
-  <Header 
+  {/* <Header 
     header='UX/UI & Development'
     description='Here are some of the UX/UI design and Front-end development projects I have worked on the past two years.'
-  />
+  /> */}
+  <div className='page-info-cont dev-works-cont'>
+    <h1>Development Works</h1>
+    <p>Here are some of the development projects I have worked on the past two years.</p>
+  </div>
   <div>
     <WorkDisplay 
       imgPreview={SfImg}
