@@ -61,8 +61,10 @@ export default function About() {
       {/* <a href="https://github.com/irenewuu" target="_blank"><img src={Github.src} alt="github icon" /></a>
       <a href="https://linkedin.com/irenewuu" target="_blank"><img src={Linkedin.src} alt="linkedin icon" /></a> */}
       
-      <button type="button">
-        <a href="../irenes_resume_webdev_uxui.pdf" download>View Resume</a>
+      {/* better way to view resume */}
+      <button type="button" onClick={()=>window.open("../irenes_resume_frontend-developer.pdf", "_blank")}>
+      <a>View Resume</a>
+        {/* <a href="../irenes_resume_frontend-developer.pdf" download>View Resume</a> */}
       </button>
     </div>
   </div>
