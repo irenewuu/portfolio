@@ -1,7 +1,8 @@
 import React from 'react';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 // componennts
-import ImgHeader from "../comps/header/ImgHeader";
+import AboutHeader from "../comps/header/AboutHeader";
 // images
 import Me from '../assets/me.png';
 import Github from "../assets/dark-github.svg";
@@ -13,7 +14,13 @@ export default function About() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
-  <ImgHeader 
+  <Head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022 | About page</title>
+    <meta name='description' content='adawfwa' />
+  </Head>
+  
+  <AboutHeader 
     header='About Me'
     description='Hello! My name is Irene and I enjoy designing and developing things for the web. I reside in Vancouver, BC, and will be graduating from the Digital Design and Development Program at British Columbia Institute of Technology, in May 2022. I have been exploring various fields, such as graphic design, video production and UI/UX design, and will continuously focus on web development as they are my area of interest. '
     img={Me.src}
@@ -62,10 +69,9 @@ export default function About() {
       <a href="https://linkedin.com/irenewuu" target="_blank"><img src={Linkedin.src} alt="linkedin icon" /></a> */}
       
       {/* better way to view resume */}
-      <button type="button" onClick={()=>window.open("../irenes_resume_frontend-developer.pdf", "_blank")}>
-      <a>View Resume</a>
-        {/* <a href="../irenes_resume_frontend-developer.pdf" download>View Resume</a> */}
-      </button>
+      {/* <button type="button" onClick={()=>window.open("../irenes_resume_frontend-developer.pdf", "_blank")}>
+        <a>View Resume</a>
+      </button> */}
     </div>
   </div>
 </motion.div>

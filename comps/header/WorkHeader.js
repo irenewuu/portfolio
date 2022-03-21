@@ -1,3 +1,4 @@
+// for individual work header
 import React from 'react';
 import { motion } from 'framer-motion';
 import downarrow from './../../assets/down-arrow.svg';
@@ -7,10 +8,10 @@ export default function WorkHeader({
     projectScope="4 months",
     projectType="Collaborative Project",
     role="Front-end Developer, UX/UI Designer",
-    tools="Figma,",
+    tools="Figma",
     img=""
 }) {
-  return <div className='header-cont'>
+  return <div className='project-header-cont'>
       <div className='project-cont'>
           <div>
             <h1>{header}</h1>
@@ -19,7 +20,7 @@ export default function WorkHeader({
               <p><b>Project Type: </b>{projectType}</p>
               <p><b>Role: </b>{role}</p>
               <p><b>Tools: </b>{tools}</p>
-              <p className='attribution'>Device Mockup on the right created from <a href="https://deviceframes.com/templates/iphone-13">iPhone mockups</a></p>
+              <p className='attribution'>Device Mockup on the right created from <a href="https://deviceframes.com/templates/iphone-13" target="_blank">iPhone mockups</a></p>
               {/* <div></div> */}
             </div>
           </div>

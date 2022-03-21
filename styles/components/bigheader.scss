@@ -1,0 +1,94 @@
+.project-header-cont {
+    // overflow-x: hidden;
+    // overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 1600px;
+    width: 100%;
+    height: 100%;
+    // height: 100vh;
+    margin: 70px 0;
+    position: relative;
+    // top: -60px;
+    // z-index: -1;
+}
+// work header ================================
+.project-cont {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    // position: absolute;
+
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    // padding: 0 48px;
+    
+    div:first-of-type {
+        width: 80%;
+        p {
+            margin: 4px 0;
+        }
+        .attribution {
+            color: $detailText;
+            font-style: italic;
+        }
+    }
+    .project-preview {
+        width: 50%;
+        text-align: center;
+        img {
+            height: 500px;
+        }
+    }
+}
+// end of work header ========================
+.down-arrow {
+    position: absolute;
+    bottom: -80px;
+    width: 20px;
+    transition: all ease-in-out;
+
+}
+
+@media screen and (max-width: $lg) {
+    // work header ================================
+    .project-cont {
+        max-width: 900px;
+        
+        div:first-of-type {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: $md) {
+    // work header ================================
+    .project-cont {
+        padding: 0 24px;
+        
+        div:first-of-type {
+            width: 100%;
+        }
+        .project-preview img {
+            height: 350px;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+    // work header ================================
+    .project-cont {
+        div:first-of-type .attribution {
+            display: none;
+        }
+        .project-preview {
+            display: none;
+        }
+    }
+}
