@@ -1,0 +1,115 @@
+
+@import './../variables/general.scss';
+.display-cont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 36px;
+    margin: 48px 24px;
+}
+.display-img {
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+    box-shadow: 0px 2px 6px rgba(54, 26, 11, 0.15);
+    border-radius: 7px;
+}
+
+.display-info-cont {
+    box-sizing: border-box;
+    position: relative;
+    width: 520px;
+    min-height: 200px;
+    padding: 24px;
+    
+    background-color: $cream;
+    box-shadow: 0px 2px 6px rgba(54, 26, 11, 0.15);
+    border-radius: 7px;
+    
+    .display-header {
+        margin-bottom: 16px;
+    }
+
+    .display-links {
+        img {
+            margin-left: 21px;
+        }
+    }
+
+    .display-descript {
+        margin-bottom: 72px;
+    }
+    .tech-used {
+        position: absolute;
+        bottom: -30px;
+        color: $detailText;
+    }
+}
+
+.read-more-link {
+    position: absolute;
+    bottom: 24px;
+    color: $link;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: $lg) {
+    .display-cont {
+        flex-direction: column;
+    }
+    .display-info-cont {
+        margin: 24px 0 60px;
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .display-img {
+        max-width: 450px;
+        height: 300px;
+    }
+    .display-info-cont {
+        max-width: 450px;
+        min-height: 150px;
+
+        .display-descript {
+            margin-bottom: 48px;
+        }
+        
+        .display-links {
+            img {
+                width: 18px;
+                margin-left: 8px;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $sm) {
+    .display-img {
+        width: 100%;
+        height: 250px;
+    }
+    .display-info-cont {
+        width: 100%;
+        min-height: 150px;
+
+        .display-descript {
+            margin-bottom: 48px;
+        }
+        
+        .display-links {
+            img {
+                width: 18px;
+                margin-left: 8px;
+            }
+        }
+        .tech-used {
+            display: none;
+        }
+    }
+    
+}

@@ -5,9 +5,13 @@ import {useRouter} from 'next/router';
 import Header from "../comps/header/Header";
 import WorkDisplay from '../comps/workDisplay/WorkDisplay';
 // images
-import KalmImg from './../assets/kalm/kalm-activities.png';
-import RevampImg from './../assets/revamp/revamp-popular.png';
-import SfImg from './../assets/sf/sf-homepage.png';
+import KalmImg from './../assets/kalm/kalm-mobile.png';
+import RevampImg from './../assets/revamp/revamp-mobile.png';
+import SfImg from './../assets/sf/sf-mobile.png';
+import KalmWork from './../assets/kalm/kalm-activities.png';
+import RevampWork from './../assets/revamp/revamp-popular.png';
+import SfWork from './../assets/sf/sf-homepage.png';
+import SmWorkDisplay from '../comps/workDisplay/SmWorkDisplay';
 
 export default function Works() {
 	const router = useRouter();
@@ -25,7 +29,7 @@ export default function Works() {
     <h1>Development Works</h1>
     <p>Here are some of the development projects I have worked on the past two years.</p>
   </div>
-  <div>
+  <div className='page-info-cont'>
     <WorkDisplay 
       imgPreview={SfImg}
       title="S/F E-Commerce"
@@ -52,6 +56,25 @@ export default function Works() {
       githubLink='https://github.com/irenewuu/revamp'
       previewLink='https://revamp.vercel.app/'
       description='This web application provides sustainable ways to reduce environmental impact by showing how to repurpose your clothes, where donate your old garments, or showing the impacts of fast fashion on our planet.'
+      projectPage={()=>router.push('/projects/revamp')}
+      techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
+    />
+    {/* tablet/mobile ver */}
+    <SmWorkDisplay 
+      imgPreview={SfWork}
+      title="S/F E-Commerce"
+      projectPage={()=>router.push('/projects/sf')}
+      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'
+    />
+    <SmWorkDisplay 
+      imgPreview={KalmWork}
+      title="Kalm"
+      projectPage={()=>router.push('/projects/kalm')}
+      techUsed='Figma&emsp;React.js&emsp;Styled-Components'
+    />
+    <SmWorkDisplay 
+      imgPreview={RevampWork}
+      title="reVamp"
       projectPage={()=>router.push('/projects/revamp')}
       techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
     />
