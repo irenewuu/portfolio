@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 // components
 import WorkHeader from '../../comps/header/WorkHeader';
@@ -15,6 +16,11 @@ export default function Project() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
+  <Head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>reVamp Project | Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022</title>
+    <meta name='description' content='Kalm, a self help web application for stress and anxiety management. A 6 person collaborative project completed in 4 months, with Irene as a frontend developer and UX/UI designer in this project.' />
+  </Head>
     <WorkHeader 
       header='Kalm'
       projectType='6 person Collaborative Project'

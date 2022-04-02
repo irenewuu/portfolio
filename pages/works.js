@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 import {useRouter} from 'next/router';
 // components
@@ -21,6 +22,11 @@ export default function Works() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
+  <Head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Development - UX/UI Works | Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022</title>
+    <meta name='description' content='Web Development and User Experience/User Interface Design projects. Irene Wu, Frontend Developer, Digital Design and Development Student at BCIT 2022.' />
+  </Head>
   {/* <Header 
     header='UX/UI & Development'
     description='Here are some of the UX/UI design and Front-end development projects I have worked on the past two years.'

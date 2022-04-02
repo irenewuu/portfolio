@@ -1,4 +1,5 @@
 import React from 'react';
+import Head from 'next/head';
 import { motion } from "framer-motion";
 // components
 import WorkHeader from '../../comps/header/WorkHeader';
@@ -14,6 +15,11 @@ export default function Project() {
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
+  <Head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>SF E-Commerce Project | Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022</title>
+    <meta name='description' content='SF E-Commerce, a e-commerce store developed for a hackathon hosted by MongoDB and DEVs. A 2 person collaborative project completed in less than a month, with Irene as a frontend developer and UX/UI designer in this project.' />
+  </Head>
     <WorkHeader 
       header='SF E-Commerce'
       projectScope='1 month'

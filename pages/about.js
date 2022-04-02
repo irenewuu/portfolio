@@ -16,8 +16,8 @@ export default function About() {
   transition={{ delay: 0.3, duration: 1.25, ease: [0.43, 0.13, 0.23, 0.96]}}>
   <Head>
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022 | About page</title>
-    <meta name='description' content='adawfwa' />
+    <title>About | Irene Wu Frontend Developer portfolio, BCIT D3 Web Development 2022</title>
+    <meta name='description' content='Irene Wu is a frontend developer based in Vancouver, British Columbia. She is currently studying Digital Design and Development Program at BCIT, and will graduate in May 2022.' />
   </Head>
   
   <AboutHeader 
