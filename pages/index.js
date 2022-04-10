@@ -4,8 +4,10 @@ import Head from 'next/head';
 // component
 import HomeHeader from "../comps/header/HomeHeader";
 // images
+import ACNH from '../assets/villagerWishlist/acnh-mobile.png';
 import SF from '../assets/sf/sf-mobile.png';
 import Kalm from '../assets/kalm/kalm-mobile.png';
+import ACNHWork from '../assets/villagerWishlist/acnh-list-wide.png';
 import SfWork from '../assets/sf/sf-homepage.png';
 import KalmWork from '../assets/kalm/kalm-activities.png';
 import Linkout from '../assets/linkout_white.svg';
@@ -33,6 +35,14 @@ export default function Home() {
     />
     <div className="page-info-cont">
       <h3>Recent Works</h3>
+        <WorkDisplay imgPreview={ACNH} 
+          title="ACNH Villager Wishlist"
+          figmaLink='https://www.figma.com/file/aFQeDvQ71KS8LCSMd6KYny/ACNH-Villager-Wishlist-App?node-id=2%3A7'
+          githubLink='https://github.com/irenewuu/villager-wishlist'
+          previewLink='https://acnh-villagerwishlist.vercel.app/'
+          description='ACNH Villager Wishlist is an app where users can create their own wishlist of villagers they like. You can view all the villagers from Animal Crossing New Horizons, including their basic information, such as birthday, gender, and personality.'
+          projectPage={()=>router.push('/projects/villager-wishlist')}
+          techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;Styled-Components&emsp;MongoDB&emsp;Socket.io'/>
         <WorkDisplay imgPreview={SF} 
           title="S/F E-Commerce"
           figmaLink='https://www.figma.com/file/WVwcDF8enJTjMFmXhTvbQS/SF-MongoDB-Hackathon-2022?node-id=97%3A236'
@@ -41,12 +51,12 @@ export default function Home() {
           description='S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search in less than one month for a hackathon hosted by MongoDB.'
           projectPage={()=>router.push('/projects/sf')}
           techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'/>
-        <WorkDisplay imgPreview={Kalm} 
-          figmaLink='https://www.figma.com/proto/NofvrFzll8aKm0PXDafOAb/Kalm-Project?node-id=814%3A1754&scaling=min-zoom&page-id=797%3A1587&starting-point-node-id=814%3A1614'
+        {/* <WorkDisplay imgPreview={Kalm} 
+          figmaLink='https://www.figma.com/file/NofvrFzll8aKm0PXDafOAb/Kalm-Project?node-id=862%3A2358'
           githubLink='https://github.com/irenewuu/kalm-app'
           previewLink='https://kalm-app.vercel.app/auth/home/0'
           projectPage={()=>router.push('/projects/kalm')}
-          techUsed='Figma&emsp;React.js&emsp;Styled-Components' />
+          techUsed='Figma&emsp;React.js&emsp;Styled-Components' /> */}
           {/* tablet/mobile ver */}
           <SmWorkDisplay 
             imgPreview={SfWork}

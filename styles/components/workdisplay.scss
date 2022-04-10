@@ -9,7 +9,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    // cursor: pointer;
 
     .display-img {
         width: 250px;
@@ -28,9 +28,11 @@
         display: flex;
         flex-direction: column;
         row-gap: 24px;
+        z-index: 10;
 
         a, a img {
             width: 24px;
+            cursor: pointer;
         }
     }
 }

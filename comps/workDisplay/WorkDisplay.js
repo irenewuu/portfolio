@@ -31,9 +31,21 @@ export default function WorkDisplay({
           <a className='read-more-link' onClick={projectPage}>Read more &gt;</a>
         </div>
         <div className='display-links'>
-            <a href={figmaLink} target="_blank"><img src={Figma.src} alt="figma icon" /></a>
-            <a href={githubLink} target="_blank"><img src={Github.src} alt="github icon" /></a>
-            <a href={previewLink} target="_blank"><img src={LinkOut.src} alt="preview icon" /></a>
+            <motion.a href={figmaLink} target="_blank"
+              whileHover={{scale: 1.15}}
+              transition={{duration: 0.3}}>
+              <img src={Figma.src} alt="figma icon" />
+            </motion.a>
+            <motion.a href={githubLink} target="_blank"
+              whileHover={{scale: 1.15}}
+              transition={{duration: 0.3}}>
+              <img src={Github.src} alt="github icon" />
+            </motion.a>
+            <motion.a href={previewLink} target="_blank"
+              whileHover={{scale: 1.15}}
+              transition={{duration: 0.3}}>
+              <img src={LinkOut.src} alt="preview icon" />
+            </motion.a>
         </div>
     </motion.div>
   )
