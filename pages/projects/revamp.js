@@ -40,14 +40,14 @@ export default function Project() {
       <section>
         <div>
           <h4>Project Brief</h4>
-          <p>This project had a team of 4 members of UX/UI Designers and Front-end Developers. We used did user testing and a lot of research, and used Figma, Illustrator, and Next.js to make this web application. </p>
+          <p>This project had a team of 4 members of UX/UI Designers and Front-end Developers. We did a lot of research, user testing, and used Figma, Illustrator, and Next.js to make this web application. </p>
         <img src={DIYs.src} />
         </div>
       </section>
       <section>
         <div>
           <h4>Challenges and Outcome</h4>
-          <p>Throughout the process, there were a couple difficulties my and my teammate faced. We struggled with some data implementation, as there were a lot of information. But with the help from our professor, we learned how to use dynamic routing, and use that to implement our data without having to create multiple pages of the same layout. </p>
+          <p>Throughout the process, there were a couple difficulties my and my teammates faced. We struggled with some data implementation, as there were a lot of information. But with the help from our professor, we learned how to use dynamic routing, and use that to implement our data without having to create multiple pages of the same layout, repeating similar code. </p>
           <p>This project was also completed online, as we were in a middle of a pandemic. One of our members was in Korea, and so we had to consider reasonable times to meet so that we can finish this project efficiently. With countless hours of meetings and working, we successfully completed a fully functioning, and imformative web application.</p>
         <img src={DIY1.src} />
         </div>

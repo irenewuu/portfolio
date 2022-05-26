@@ -40,7 +40,7 @@ export default function Project() {
       <section>
         <div>
           <h4>Project Brief</h4>
-          <p>This was a project where the D3 program collaborated with the FSWD program. Our team consisted of 3 designers and front-end develoers, and 3 full-stack developers. We used React.js, Express, and MySQL to develop the web application, and had it hosted on Heroku.</p>
+          <p>This was a project where the D3 program collaborated with the FSWD program. Our team consisted of 3 designers/front-end develoers, and 3 full-stack developers. We used React.js, Express, and MySQL to develop the web application, and had it hosted on Heroku.</p>
         </div>
         <div className='row-space-between img-cont'>
           <img src={Relief.src} className='mobile-img' />

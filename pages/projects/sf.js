@@ -45,7 +45,7 @@ export default function Project() {
       <section>
         <div>
           <h4>Challenges and Outcome</h4>
-          <p>Throughout the process, there were a couple difficulties my and my teammate faced. I onboarded a week after the Hackathon started, so we had to pick up the pace. We would work for hours, but in a couple days, we ironed out the design prototype and started coding. There have been points where I struggled with some codes, such as connecting the database information to the products, but my teammate, Ryan, helped me with that. I learned a lot from this project, because Ryan was a good teacher and explained to me how the serverside codes worked, and how they communicated with each other.</p>
+          <p>Throughout the process, there were a couple difficulties my teammate and I faced. I onboarded a week after the Hackathon started, so we had to pick up the pace. We would work for hours, but in a couple days, we ironed out the design prototype and started coding. There have been points where I struggled with some codes, such as connecting the database information to the products, but my teammate, Ryan, helped me with that. I learned a lot from this project, because my teammate was a good teacher and explained to me how the serverside codes worked, and how they communicated with each other.</p>
         <img src={Product.src} />
         </div>
       </section>
