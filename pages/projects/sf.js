@@ -22,7 +22,7 @@ export default function Project() {
   </Head>
     <WorkHeader 
       header='SF E-Commerce'
-      projectScope='1 month'
+      projectScope='1 month, Jan-Feb 2022'
       projectType='2 person Collaborative Project'
       tools='Figma, Next.js, Sass, MongoDB Atlas Search'
       img={SFMobile}

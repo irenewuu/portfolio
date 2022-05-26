@@ -6,12 +6,14 @@ import {useRouter} from 'next/router';
 import Header from "../comps/header/Header";
 import WorkDisplay from '../comps/workDisplay/WorkDisplay';
 // images
+import ACNH from './../assets/villagerWishlist/acnh-mobile.png';
 import KalmImg from './../assets/kalm/kalm-mobile.png';
 import RevampImg from './../assets/revamp/revamp-mobile.png';
 import SfImg from './../assets/sf/sf-mobile.png';
 import KalmWork from './../assets/kalm/kalm-activities.png';
 import RevampWork from './../assets/revamp/revamp-popular.png';
 import SfWork from './../assets/sf/sf-homepage.png';
+import ACNHWork from './../assets/villagerWishlist/acnh-list-wide.png';
 import SmWorkDisplay from '../comps/workDisplay/SmWorkDisplay';
 
 export default function Works() {
@@ -36,6 +38,22 @@ export default function Works() {
     <p>Here are some of the development projects I have worked on the past two years.</p>
   </div>
   <div className='page-info-cont'>
+    <WorkDisplay imgPreview={ACNH} 
+      title="ACNH Villager Wishlist"
+      figmaLink='https://www.figma.com/file/aFQeDvQ71KS8LCSMd6KYny/ACNH-Villager-Wishlist-App?node-id=2%3A7'
+      githubLink='https://github.com/irenewuu/villager-wishlist'
+      previewLink='https://acnh-villagerwishlist.vercel.app/'
+      description='ACNH Villager Wishlist is an app where users can create their own wishlist of villagers they like. You can view all the villagers from Animal Crossing New Horizons, including their basic information, such as birthday, gender, and personality.'
+      projectPage={()=>router.push('/projects/villager-wishlist')}
+      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;Styled-Components&emsp;MongoDB&emsp;Express.js&emsp;Socket.io'/>
+    <WorkDisplay 
+      imgPreview={KalmImg}
+      figmaLink='https://www.figma.com/file/NofvrFzll8aKm0PXDafOAb/Kalm-Project?node-id=862%3A2358'
+      githubLink='https://github.com/irenewuu/kalm-app'
+      previewLink='https://kalm-app.vercel.app/auth/home/0'
+      projectPage={()=>router.push('/projects/kalm')}
+      techUsed='Figma&emsp;React.js&emsp;Styled-Components'
+    />
     <WorkDisplay 
       imgPreview={SfImg}
       title="S/F E-Commerce"
@@ -45,15 +63,6 @@ export default function Works() {
       description='S/F is a shoes e-commerce store designed and built with Next.js, SASS, Mongoose, and MongoDB Atlas Search in less than one month for a hackathon hosted by MongoDB.'
       projectPage={()=>router.push('/projects/sf')}
       techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;MongoDB Atlas Search'
-    />
-    <WorkDisplay 
-      imgPreview={KalmImg}
-      figmaLink='https://www.figma.com/proto/NofvrFzll8aKm0PXDafOAb/Kalm-Project?node-id=814%3A1754&scaling=min-zoom&page-id=797%3A1587&starting-point-node-id=814%3A1614'
-      githubLink='https://github.com/irenewuu/kalm-app'
-      previewLink='https://kalm-app.vercel.app/auth/home/0'
-      projectPage={()=>router.push('/projects/kalm')}
-      techUsed='Figma&emsp;React.js&emsp;Styled-Components'
-    
     />
     <WorkDisplay 
       imgPreview={RevampImg}
@@ -66,6 +75,12 @@ export default function Works() {
       techUsed='Figma&emsp;Next.js&emsp;Styled-Components'
     />
     {/* tablet/mobile ver */}
+    <SmWorkDisplay 
+      imgPreview={ACNHWork}
+      title="ACNH Villager Wishlist"
+      projectPage={()=>router.push('/projects/villager-wishlist')}
+      techUsed='Figma&emsp;Next.js&emsp;Sass&emsp;Styled-Components&emsp;MongoDB&emsp;Express.js&emsp;Socket.io'
+    />
     <SmWorkDisplay 
       imgPreview={SfWork}
       title="S/F E-Commerce"

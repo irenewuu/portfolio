@@ -23,6 +23,7 @@ export default function Project() {
   </Head>
     <WorkHeader 
       header='Kalm'
+      projectScope='4 months, Sept-Dec 2021'
       projectType='6 person Collaborative Project'
       tools='Figma, React.js, Styled-Components'
       img={KalmMobile}
@@ -49,7 +50,7 @@ export default function Project() {
       <section>
         <div>
           <h4>Challenges and Outcomes</h4>
-          <p>As our team consisted of 6 students that had a fully packed schedule, we found it hard to spend as much time on this project as we wished to. But using good organization and time management, we worked continuously in a tight schedule, while studying and completing other assignments that were coming at us. In the end, we built a successful, responsive web application despite the schedule, and presented to a large audience of at least 100 members.</p>
+          <p>As our team consisted of 6 students that had fully packed schedules, and we found it hard to spend as much time on this project as we wished to. But using good organization and time management, we worked continuously in a tight schedule, while studying and completing other assignments that were coming at us. In the end, we built a successful, responsive web application despite the schedule, and presented to a large audience of at least 100 members.</p>
         </div>
         <img src={Home.src} />
       </section>

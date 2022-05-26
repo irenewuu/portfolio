@@ -23,6 +23,7 @@ export default function Project() {
   </Head>
     <WorkHeader 
       header='reVamp'
+      projectScope='4 months, Feb-May 2021'
       projectType='4 person Collaborative Project'
       role='Lead Front-end Developer, UX/UI Designer'
       tools='Figma, Next.js, Styled-Components'
