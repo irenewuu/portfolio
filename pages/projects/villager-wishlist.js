@@ -51,7 +51,7 @@ export default function Project() {
       <section>
         <div>
           <h4>Challenges and Outcome</h4>
-          <p>Throughout this project, there were many things we didn't know about backend since we were still learning about how it works, and had to ask the professors many questions. It took a while to understand how RESTful APIs work, but once we understood it, it was so much easier to work on the project.  </p>
+          <p>Throughout this project, there were many things we didn&#39;t know about backend since we were still learning about how it works, and had to ask the professors many questions. It took a while to understand how RESTful APIs work, but once we understood it, it was so much easier to work on the project.  </p>
           <p>One of the challenges I faced was making the search with filters to work. I spent many hours just working on the filter panel, due to being unable to understand why there are no search results after applying multiple filters. It took many tries later that I realized if the filters were too specific, nothing would show up. For example, there were only female villagers with Peppy or Snooty personality, but I kept adding male to the filters. </p>
           <p>Long story short, I learned a lot of backend related things just working on this project, such as setting up the backend, using MongoDB, and making error handlers so that we can at least know what is going wrong. RESTful APIs is also one of the big things I learned, as it is important to use them properly and figure how to make the data fetch faster. And in the end, we were able to successfully build a fully functional web application.</p>
         </div>
